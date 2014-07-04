@@ -27,7 +27,7 @@ make && make install
 
 ## Install redis
 
-1. From source
+* From source
 
 ```
 cd /ust/src
@@ -37,7 +37,7 @@ cd redis-2.8.12
 make
 ```
 
-2. APT (DEBIAN/UBUNTU)
+* APT (DEBIAN/UBUNTU)
 
 `apt-get install redis-server`
 
