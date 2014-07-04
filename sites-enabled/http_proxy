@@ -1,7 +1,7 @@
 set $server '';
 
 # This is the routing rule.
-set $dwight ngx.var.http_host;
+set $dwight $http_host;
 
 access_by_lua_file 'lua/conrad/app.lua';
 
