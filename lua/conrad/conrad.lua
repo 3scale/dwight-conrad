@@ -8,6 +8,11 @@ function conrad:lookup(key)
   local server, err = red:get(key)
   redis.disconnect(red)
 
+  if not server then
+     ngx.log(ngx.ERR, "failed to get redis key: ", err)
+     return ngx.exit(500)
+  end
+
   if server == ngx.null then
     return "default"
   end
