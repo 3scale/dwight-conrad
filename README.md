@@ -43,12 +43,12 @@ make
 
 ## Install Dwight Conrad
 
-1. Clone this repo on your home
+* Clone this repo on your home
 ```
 git clone git@github.com:3scale/dwight-conrad.git /home/${USERNAME}/dwight-conrad
 ```
 
-2. Create directories
+* Create directories
 ````
 mkdir -p /opt/openresty/nginx/lua
 mkdir -p /opt/openresty/nginx/conf/sites-enabled
