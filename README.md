@@ -8,7 +8,7 @@ Dwight is also the smallest son of `Hermes Conrad`, our Routing system on [APIto
 
 # Dependencies
 
-* [Redis](http://redis.io).
+* [Redis](http://redis.io)
 * [Openresty](http://openresty.org/) 
 
 # Install Guide
