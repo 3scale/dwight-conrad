@@ -27,7 +27,7 @@ make && make install
 
 ## Install redis
 
-1. From source
+* From source
 
 ```
 cd /ust/src
@@ -37,24 +37,24 @@ cd redis-2.8.12
 make
 ```
 
-2. APT (DEBIAN/UBUNTU)
+* APT (DEBIAN/UBUNTU)
 
 `apt-get install redis-server`
 
 ## Install Dwight Conrad
 
-1. Clone this repo on your home
+* Clone this repo on your home
 ```
 git clone git@github.com:3scale/dwight-conrad.git /home/${USERNAME}/dwight-conrad
 ```
 
-2. Create directories
+* Create directories
 ````
 mkdir -p /opt/openresty/nginx/lua
 mkdir -p /opt/openresty/nginx/conf/sites-enabled
-ln -s /opt/openresty/nginx/lua/conrad /home/${USERNAME}/dwight-conrad/current/lua/conrad
-ln -s /opt/openresty/nginx/html/conrad /home/${USERNAME}/dwight-conrad/current/html/conrad
-ln -s /opt/openresty/nginx/conf/sites-enabled/conrad /home/${USERNAME}/conrad/current/sites-enabled/conrad
+ln -s /opt/openresty/nginx/lua/conrad /home/${USERNAME}/dwight-conrad/lua/conrad
+ln -s /opt/openresty/nginx/html/conrad /home/${USERNAME}/dwight-conrad/html/conrad
+ln -s /opt/openresty/nginx/conf/sites-enabled/conrad /home/${USERNAME}/conrad/sites-enabled/conrad
 ```
 
 # LICENSE
