@@ -1,0 +1,5 @@
+location /conrad/ {
+  # use sub_filter to link to correct brain url
+  internal;
+  alias html/conrad/;
+}
