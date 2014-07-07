@@ -1,7 +1,7 @@
 set $server '';
 
 # This is the routing rule.
-set $dwight $http_host;
+set $dwight $host;
 
 access_by_lua_file 'lua/conrad/app.lua';
 
