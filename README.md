@@ -2,7 +2,7 @@
 
 ![dwight](http://www.netbrawl.com/uploads/93be3b042e6765ed83a95fa8b8949406.JPG)
 
-Dwight is [3scale](http://www.3scale.net) answer to the need of routing HTTP/HTTPS traffic between different stacks. It is also used when we need to release new features to a selective group of users or when we need to move certain percentage of our customers to a new stack either to show them new features, or for maintenance reasons but still have the power to send them back to the old stack without much effort. Heavily based on Openresty [DynamicRoutingBasedOnRedis](http://openresty.org/#DynamicRoutingBasedOnRedis)
+Dwight is [3scale](http://www.3scale.net) answer to the need of routing HTTP/HTTPS traffic between different stacks. It is also used when we need to release new features to a selective group of users or when we need to move certain percentage of our customers to a new stack for maintenance reasons without loosing the power to send them back to the old stack without much effort. Heavily based on Openresty [DynamicRoutingBasedOnRedis](http://openresty.org/#DynamicRoutingBasedOnRedis)
 
 Dwight is also the smallest son of `Hermes Conrad`, our Routing system on [APItools](http://www.apitools.com), which is in charge of routing traffic between Docker Containers.
 
