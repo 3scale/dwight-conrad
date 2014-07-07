@@ -1,2 +1,4 @@
 spec/*
 Rakefile
+Gemfile
+Gemfile.lock
