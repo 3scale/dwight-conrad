@@ -6,6 +6,10 @@ Dwight is [3scale](http://www.3scale.net) answer to the need of routing HTTP/HTT
 
 Dwight is also the smallest son of `Hermes Conrad`, our Routing system on [APItools](http://www.apitools.com), which is in charge of routing traffic between Docker Containers.
 
+# Scenario
+
+![](docs/dwight.png)
+
 # Dependencies
 
 * [Redis](http://redis.io)
