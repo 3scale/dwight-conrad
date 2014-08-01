@@ -61,6 +61,18 @@ ln -s /opt/openresty/nginx/html/conrad /home/${USERNAME}/dwight-conrad/html/conr
 ln -s /opt/openresty/nginx/conf/sites-enabled/conrad /home/${USERNAME}/conrad/sites-enabled/conrad
 ```
 
+## Set keys in Redis
+
+```
+bender@server01:~# redis-cli
+127.0.0.1:6379> set "domain.example.com" "proxypass_name"
+```
+
+# Feedback
+
+* IRC: `#3scale` on Freenode
+* Twitter: `@3scale`
+
 # LICENSE
 
 Copyright (c) 2014 3scale
