@@ -1,0 +1,4 @@
+luarocks {
+  module { 'lua-resty-auto-ssl' },
+  module { 'luafilesystem' },
+}
