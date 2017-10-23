@@ -1,0 +1,3 @@
+#!/bin/bash
+
+exec openresty -c /opt/app-root/src/conf/nginx.conf -g "daemon off; error_log stderr ${LOG_LEVEL:-warn};"
