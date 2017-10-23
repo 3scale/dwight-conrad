@@ -1,2 +1,2 @@
 lua_modules
-letsencrypt
+resty-auto-ssl
