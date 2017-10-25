@@ -5,6 +5,9 @@ export LOG_LEVEL ?= info
 
 BUILDER_IMAGE ?= quay.io/3scale/s2i-openresty-centos7:rover
 IMAGE_NAME ?= auto-ssl-candidate
+REGISTRY ?= quay.io/3scale
+
+REMOTE_IMAGE_NAME ?= $(REGISTRY)/$(IMAGE_NAME)
 
 build:
 	s2i build . $(BUILDER_IMAGE) $(IMAGE_NAME) --incremental --copy
@@ -17,3 +20,10 @@ run:
 
 test:
 	docker run -it -e PROXY_ENDPOINT=http://echo-api.3scale.net -v $(PWD)/resty-auto-ssl:/etc/resty-auto-ssl $(IMAGE_NAME) openresty -c /opt/app-root/src/conf/nginx.conf -g 'daemon on;'
+
+push:
+	docker tag $(IMAGE_NAME) $(REMOTE_IMAGE_NAME)
+	docker push $(REMOTE_IMAGE_NAME)
+
+release:
+	$(MAKE) build push IMAGE_NAME=dwight:ssl
